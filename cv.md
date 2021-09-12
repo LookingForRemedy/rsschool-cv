@@ -14,10 +14,10 @@ I would like to improve my skills as a programmer. Then I would like to find a g
 - React
 - Git
 
-## Example*
+## Example
     console.log('Hello, World!');
 
-## Expirience**
+## Expirience
 Frontend developer on Angular
 
 ## Education
