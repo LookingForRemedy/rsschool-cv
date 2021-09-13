@@ -1,1 +1,1 @@
-https://github.com/LookingForRemedy/rsschool-cv/
+https://lookingforremedy.github.io/rsschool-cv/
