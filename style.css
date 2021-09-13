@@ -1,0 +1,110 @@
+html {
+  font-family: Roboto, sans-serif;
+  --primary-color: #2f80ed;
+  --secondary-color: #333333;
+  --bg-color: #fff;
+}
+
+html[data-theme='dark-mode'] {
+  font-family: Roboto, sans-serif;
+  --primary-color: #2f80ed;
+  --secondary-color: #fff;
+  --bg-color: #222121;
+}
+
+body {
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+* {
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cv {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h3 {
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.dark {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+.contacts {
+  margin-bottom: 2em;
+}
+
+.contacts .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .contact__type {
+  min-width: 90px;
+}
+
+.expirience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.expirience__name {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.expirience__date {
+  min-width: 250px;
+}
+
+@media (max-width: 575px) {
+  .cv {
+    margin: 10px;
+  }
+  .expirience {
+    display: block;
+  }
+}
+
+html.transition,
+html.transition * {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+/*# sourceMappingURL=style.css.map */
