@@ -1,80 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="cv">
+  <div class="container">
 
-<body>
-    <div class="cv">
-        <header>
-            <h1>Egor Alisionak</h1>
-        </header>
-        <main>
-            <nav>
-                <h2>Contacts</h2>
-                <ul>
-                    <li><a href="https://vk.com/just_a_memer">Vk</a></li>
-                    <li>Stigma#6055 Discord</li>
-                </ul>
-            </nav>
-            <section>
-                <h3>About</h3>
-                <p>I would like to improve my skills as a programmer. Then I would like to find a good job in this area and make money.
-                   I can seek information and adapt to any situation.</p>
-            </section>
-            <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>
-                                <ul>
-                                    <li>SCSS</li>
-                                </ul>
-                            </li>
-                            <li>JS</li>
-                            <li>TS</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>Anuglar</li>
-                            <li>React</li>
-                            <li>Git</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h3>Example*</h3>
-                <code>
-                   console.log('Hello, World!');
-                </code>
-            </section>
-            <section>
-                <h3>Expirience**</h3>
-                <p>Frontend developer on Angular</p>
-            </section>
-            <section>
-                <h3>Education</h3>
-                <ul>
-                    <li>BSAC (Communication specialist) - 2013-2018</li>
-                    <li>BSAC (Software specialist) - 2018-2021</li>
-                </ul>
-            </section>
-            <section>
-                <h3>English</h3>
-                <p>B2</p>
-            </section>
-        </main>
-    </div>
+    <main class="cv-main">
+      <aside class="block-left cv-grey">
+        <section class="cv-sec cv-photoname cv-orange">
+          <figure class="cv-figure">
+            <img class="cv-photo" src="images/photo.jpg" alt="Egor Alisionak">
+          </figure>
+          <h1 class="cv-h1">Egor Alisionak</h1>
+        </section>
+        <section class="cv-sec cv-contacts">
+          <h2 class="cv-h2 cv-h2-white">Contacts</h2>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <img src="images/icons/discord.svg" alt="discord">
+              <span>Egor (Stigma#6055)</span>
+            </li>
+          </ul>
+        </section>
+        <section class="cv-sec cv-skills">
+          <h2 class="cv-h2 cv-h2-white">Skills</h2>
+          <ul class="cv-skills-list">
+            <li class="cv-skills-item">HTML, CSS (Bootstrap)</li>
+            <li class="cv-skills-item">JavaScript</li>
+            <li class="cv-skills-item">TypeScript (Angular)</li>
+          </ul>
+        </section>
+      </aside>
+      <div class="block-right cv-white">
+        <section class="cv-sec cv-summary">
+          <h2 class="cv-h2"> <img src="images/icons/notes-grey.svg" alt=""> Summary</h2>
+          <div class="cv-text">
+            <p>I would like to improve my skills as a programmer.</p>
+            <p>Then I would like to find a good job in this area and make some money.</p>
+            <p>I can seek information and adapt to any situation.</p>
+          </div>
+        </section>
+        <section class="cv-sec cv-experience">
+          <h2 class="cv-h2"> <img src="images/icons/imac-grey.svg" alt=""> Experience</h2>
+          <div class="cv-table">
+            <div class="cv-table-row">
+              <div class="cv-table-td">2020 — Present</div>
+              <div class="cv-table-td">
+                <b>Web developer</b>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cv-sec cv-code">
+          <h2 class="cv-h2"> <img src="images/icons/diskette-grey.svg" alt=""> Example of My Code</h2>
+          <div class="cv-text">
+            <p></p>
+            <pre class="cv-codeblock">
+              <code>
+(function(){
+  function greetMe(yourName) {
+    alert('Hello ' + yourName);
+  }
+
+  greetMe('World');
+})();
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="cv-sec cv-education">
+          <h2 class="cv-h2"> <img src="images/icons/mortarboard-grey.svg" alt=""> Education</h2>
+
+          <h3 class="cv-h3">Higher education</h3>
+          <div class="cv-table">
+            <div class="cv-table-row">
+                <div class="cv-table-td">2018 — 2021	</div>
+                <div class="cv-table-td">
+                  <b>University:</b> Belarusian State University of Informatics and Radioelectronics <br>
+                  <b>Faculty:</b> Computer Sciences and Technologies <br>
+                </div>
+            </div>
+          </div>
+
+        </section>
+        <section class="cv-sec cv-english">
+          <h2 class="cv-h2"> <img src="images/icons/books-grey.svg" alt=""> English</h2>
+          <div class="cv-text">
+            <p>Intermediate (B1)</p>
+          </div>
+        </section>
+      </div>
+        
+    </main>
+    <footer class="cv-footer">
+      <div class="cv-footer-item"></div>
+      <div class="cv-footer-item">2021</div>
+      <div class="cv-footer-item"></div>
+    </footer>
+  </div>
 </body>
-
 </html>
